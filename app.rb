@@ -1,13 +1,22 @@
 require 'sinatra/base'
 
-
-
 class DatabaseServer < Sinatra::Base
 
-  set:port, 4000
+  set:port, 4000,
+  enable: sessions
+
+  $key_values = {}
 
   get '/' do
     erb(:index)
+  end
+
+  get '/set' do
+    $key_values.merge!(params)
+  end
+
+  get '/get' do
+    $key_values[params[:key]]
   end
 
   # start the server if ruby file executed directly
