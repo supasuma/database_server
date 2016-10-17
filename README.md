@@ -7,6 +7,11 @@ To use this VERY SIMPLY App:-
 - Visit /set and enter your key value pair i.e. "/set?name=Summer"
 - Visit /get to have the value of any entered keys returned i.e. "/get?key=name"
 
+Technologies:-
+
+- I used Ruby with Sinatra and tested with Rspec/Capybara
+
+Summary:-
 
 Despite the simple nature of this apps functionality I struggled with it conceptually - this can be seen when visiting the root page ;-)
 
