@@ -8,7 +8,7 @@ class DatabaseServer < Sinatra::Base
   $key_values = {}
 
   get '/' do
-    erb(:index)
+    "WHY IS THIS SO HARD!"
   end
 
   get '/set' do
